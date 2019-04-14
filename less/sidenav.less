@@ -4,7 +4,6 @@
 		display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-		background: #4acaa8;
 		color: #d2f2e9;
     height: 100%;
     overflow-y: auto;
@@ -13,6 +12,7 @@
 		top: 0;
 		width: 25rem;
     left: 0;
+    z-index: 999;
     
     h1, p {
       color: white;
@@ -24,6 +24,8 @@
     }
 
     header {
+      background: black;
+      border-bottom-right-radius: 10px;
       
       img {
         display: block;
@@ -36,7 +38,14 @@
 
     .dropdown {
       padding: 2%;
-      margin-top: 2rem;
+      background: black;
+      border-top-right-radius: 10px;
+
+      .menu {
+        width: 80%;
+        display: inline-block;
+        margin-bottom: 10px;
+      }
 
       .dropdown-content {
         display: flex;
@@ -47,6 +56,7 @@
           font-size: 2rem;
           border: 1px solid white;
           padding: 5%;
+          border-radius: 10px;
           text-decoration: none;
 
           &:active {

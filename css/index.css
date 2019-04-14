@@ -7,6 +7,8 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  height: 100%;
 }
 h1,
 h2,
@@ -34,7 +36,6 @@ p {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  background: #4acaa8;
   color: #d2f2e9;
   height: 100%;
   overflow-y: auto;
@@ -43,6 +44,7 @@ p {
   top: 0;
   width: 25rem;
   left: 0;
+  z-index: 999;
 }
 .side-nav h1,
 .side-nav p {
@@ -51,6 +53,10 @@ p {
 .side-nav h1 {
   font-size: 1.75rem;
   margin: 0;
+}
+.side-nav header {
+  background: black;
+  border-bottom-right-radius: 10px;
 }
 .side-nav header img {
   display: block;
@@ -61,7 +67,13 @@ p {
 }
 .side-nav .dropdown {
   padding: 2%;
-  margin-top: 2rem;
+  background: black;
+  border-top-right-radius: 10px;
+}
+.side-nav .dropdown .menu {
+  width: 80%;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 .side-nav .dropdown .dropdown-content {
   display: flex;
@@ -72,6 +84,7 @@ p {
   font-size: 2rem;
   border: 1px solid white;
   padding: 5%;
+  border-radius: 10px;
   text-decoration: none;
 }
 .side-nav .dropdown .dropdown-content a:active {
@@ -79,4 +92,43 @@ p {
 }
 .side-nav .dropdown .dropdown-content a:hover {
   background-color: white;
+}
+.top-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: -1;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  opacity: 0.9;
+  transition-property: background-image;
+  transition-duration: 0.75s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+.top-content .top-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  height: 40%;
+  width: 50%;
+  z-index: 10;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.9;
+}
+.top-content .top-content-wrapper h1 {
+  font-size: 5rem;
+  opacity: 1;
+}
+.top-content .top-content-wrapper p {
+  font-size: 2rem;
+  opacity: 1;
 }

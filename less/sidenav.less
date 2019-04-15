@@ -21,6 +21,7 @@
     h1 {
       font-size: 1.75rem;
       margin: 0;
+      width: 100%;
     }
 
     header {
@@ -40,7 +41,11 @@
       }
     }
 
-    .dropdown {
+    .hide {
+      display: none;
+    }
+
+    .menu {
       padding: 2%;
       border-top-right-radius: 10px;
       width: 90%;
@@ -52,14 +57,14 @@
         display: none;
       }
 
-      .dropdown-content {
+      .menu-content {
         display: flex;
         justify-content: space-evenly;
         width: 100%;
         border: 1px solid gray;
         background-color: black;
 
-        a {
+        .link {
           font-size: 1.8rem;
           color: white;
           border-radius: 10px;
@@ -83,4 +88,34 @@
       // }
     }
 
+    @media @phone {
+      width: 100%;
+
+      header {
+        display: none;
+      }
+
+      .menu {
+        display: none;
+      }
+
+      .hide {
+        display: flex;
+      }
+      .drop-menu {
+        width: 100%;
+        background-image: url("../img/menu.png");
+        background-repeat: no-repeat;
+        background-size: 90px 90px;
+        border: 1px solid white;
+
+        .drop-nav {
+          display: flex;
+          flex-flow: column nowrap;
+          width: calc(100%-90px);
+          height: 25%;
+          border: 1px solid blue;
+        }
+      }
+    }
 	}

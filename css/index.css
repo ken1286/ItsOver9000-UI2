@@ -52,6 +52,7 @@ p {
 .navigation h1 {
   font-size: 1.75rem;
   margin: 0;
+  width: 100%;
 }
 .navigation header {
   background: black;
@@ -68,37 +69,68 @@ p {
   width: 60%;
   border-radius: 50%;
 }
-.navigation .dropdown {
+.navigation .hide {
+  display: none;
+}
+.navigation .menu {
   padding: 2%;
   border-top-right-radius: 10px;
   width: 90%;
   height: 80px;
 }
-.navigation .dropdown .menu {
+.navigation .menu .menu {
   width: 80%;
   margin-bottom: 10px;
   display: none;
 }
-.navigation .dropdown .dropdown-content {
+.navigation .menu .menu-content {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
   border: 1px solid gray;
   background-color: black;
 }
-.navigation .dropdown .dropdown-content a {
+.navigation .menu .menu-content .link {
   font-size: 1.8rem;
   color: white;
   border-radius: 10px;
   text-decoration: none;
   padding: 1%;
 }
-.navigation .dropdown .dropdown-content a:active {
+.navigation .menu .menu-content .link:active {
   background-color: white;
 }
-.navigation .dropdown .dropdown-content a:hover {
+.navigation .menu .menu-content .link:hover {
   background-color: white;
   color: black;
+}
+@media (max-width: 500px) {
+  .navigation {
+    width: 100%;
+  }
+  .navigation header {
+    display: none;
+  }
+  .navigation .menu {
+    display: none;
+  }
+  .navigation .hide {
+    display: flex;
+  }
+  .navigation .drop-menu {
+    width: 100%;
+    background-image: url("../img/menu.png");
+    background-repeat: no-repeat;
+    background-size: 90px 90px;
+    border: 1px solid white;
+  }
+  .navigation .drop-menu .drop-nav {
+    display: flex;
+    flex-flow: column nowrap;
+    width: calc(100%-90px);
+    height: 25%;
+    border: 1px solid blue;
+  }
 }
 .top-content {
   display: flex;
@@ -137,6 +169,12 @@ p {
 .top-content .top-content-wrapper p {
   font-size: 2rem;
   opacity: 1;
+}
+@media (max-width: 500px) {
+  .top-content .top-content-wrapper {
+    width: 100%;
+    height: 350px;
+  }
 }
 .content-2 {
   display: flex;

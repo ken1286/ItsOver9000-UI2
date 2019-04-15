@@ -97,7 +97,7 @@ p {
   background-color: white;
 }
 .navigation .dropdown .dropdown-content a:hover {
-  background-color: #0066cc;
+  background-color: white;
   color: black;
 }
 .top-content {
@@ -146,7 +146,6 @@ p {
   height: 50vh;
   background: white;
   margin-top: 1%;
-  background-image: url("../img/boardbackground.jpg");
 }
 .content-2 .content-2-wrapper {
   width: 80%;
@@ -155,8 +154,9 @@ p {
   justify-content: space-around;
 }
 .content-2 .content-2-wrapper .content-box {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   border: 1px solid black;
   border-radius: 5%;
+  text-align: center;
 }

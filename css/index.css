@@ -228,6 +228,9 @@ p {
   .top-content .top-content-wrapper p {
     text-align: center;
   }
+  .top-content .top-content-wrapper form {
+    width: 80%;
+  }
 }
 .content-2 {
   display: flex;

@@ -63,10 +63,9 @@ p {
 }
 .navigation header img {
   display: block;
-  margin: 2.25rem auto 2.25rem auto;
-  height: 70px;
-  width: 60%;
-  border-radius: 50%;
+  margin: 0 auto;
+  width: 50%;
+  border: 1px solid white;
 }
 .navigation .hide {
   display: none;
@@ -93,16 +92,18 @@ p {
 .navigation .menu .menu-content .link {
   font-size: 1.8rem;
   color: white;
+  width: 125px;
   border-radius: 10px;
   text-decoration: none;
   padding: 1%;
+  opacity: 0.8;
 }
 .navigation .menu .menu-content .link:active {
   background-color: white;
+  color: black;
 }
 .navigation .menu .menu-content .link:hover {
-  background-color: white;
-  color: black;
+  opacity: 1;
 }
 @media (max-width: 500px) {
   .navigation {
@@ -193,7 +194,7 @@ p {
   margin-top: 3%;
   padding: 0.2%;
 }
-.top-content .top-content-wrapper form .input-btn {
+.top-content .top-content-wrapper form .input-form {
   width: 45%;
   padding-left: 3px;
   font-size: 1.8rem;
@@ -202,11 +203,17 @@ p {
   margin-bottom: 20px;
   background-color: lightgray;
 }
+.top-content .top-content-wrapper form .hidden {
+  visibility: hidden;
+}
+.top-content .top-content-wrapper form .transition-add {
+  transition: all 0.5s ease-in-out;
+}
 .top-content .top-content-wrapper form .submit-btn {
   padding: 2%;
   width: 90px;
   font-size: 1.8rem;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 .top-content .top-content-wrapper h1 {
   font-size: 5rem;
@@ -232,26 +239,40 @@ p {
 .content-2 {
   display: flex;
   justify-content: center;
-  align-content: center;
   width: 100%;
   background: white;
-  padding-top: 1%;
+  padding-top: 0.5%;
+  background-image: url("../img/chess-wallpaper6.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
 }
 .content-2 .content-2-wrapper {
   width: 90%;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .content-2 .content-2-wrapper .card {
-  width: 300px;
+  width: 24%;
   height: 300px;
+  min-width: 300px;
   border: 1px solid black;
   text-align: center;
-  background-color: white;
+  background: rgba(255, 255, 255, 0.85);
 }
 .content-2 .content-2-wrapper .card:nth-child(odd) {
-  background: black;
+  background: rgba(0, 0, 0, 0.85);
   color: white;
+}
+.content-2 .content-2-wrapper .card:nth-child(odd):hover {
+  background: #000000;
+}
+.content-2 .content-2-wrapper .card:hover {
+  border: 20px solid #FFA500;
+  opacity: 1;
+  transition: 0.15s;
+  background: #ffffff;
 }
 @media (max-width: 500px) {
   .content-2 .content-2-wrapper {
@@ -259,13 +280,10 @@ p {
   }
   .content-2 .content-2-wrapper .card {
     width: 100%;
+    background: #ffffff;
   }
-}
-@media (max-width: 500px) {
-  .wrapper {
-    width: 100%;
-  }
-  .wrapper .card {
-    width: 100%;
+  .content-2 .content-2-wrapper .card:nth-child(odd) {
+    background: #000000;
+    color: white;
   }
 }

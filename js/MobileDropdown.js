@@ -21,3 +21,15 @@ class Dropdown {
 let dropdowns = document.querySelectorAll(".drop-menu");
 
 dropdowns.forEach( dropdown => new Dropdown(dropdown));
+
+let logo = document.querySelector(".logo");
+
+window.addEventListener('load', () => {logoGrow()});
+
+function logoGrow() {
+  TweenMax.to(logo, 1, {width:"90px"});
+}
+
+// function logoSpin() {
+//   TweenMax.to(logo, 1, {rotateY:360});
+// }

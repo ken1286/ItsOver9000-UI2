@@ -13,8 +13,10 @@
 
 <body>
     <script defer="defer" src="./js/MobileDropdown.js"></script>
-  <!-- Header Nav -->
+    <script defer="defer" src="./js/Carousel.js"></script>
+  
   <div class="container">
+    <!-- Header Nav -->
     <section class="navigation">
       <header>
         <img src="img/chessdog.jpg">
@@ -46,26 +48,58 @@
       <div class="top-content-wrapper">
         <h1>It's Over 9000!</h1>
         <p>Analyze chess positions to find your strength.</p>
+        <form>
+          <input class="input-btn" type="text" placeholder="Username">
+          <input class="input-btn" type="password" placeholder="Password">
+          <input class="submit-btn" type="submit" value="Login">
+        </form>
       </div>
     </section>
 
     <!-- Next Content Section -->
     <section class="content-2">
-      <div class="content-2-wrapper">
-        <div class="content-box content-box-1">
+      <div class="content-2-wrapper" data-target="carousel">
+        <div class="card" data-target="card">
           <h2>Description</h2>
         </div>
-        <div class="content-box content-box-2">
+        <div class="card" data-target="card">
           <h2>Feature1</h2>
         </div>
-        <div class="content-box content-box-3">
+        <div class="card" data-target="card">
           <h2>Feature2</h2>
         </div>
-        <div class="content-box content-box-4">
+        <div class="card" data-target="card">
           <h2>Data</h2>
+        </div>
+        <div class="card" data-target="card">
+            <h2>Data</h2>
+        </div>
+        <div class="card" data-target="card">
+            <h2>Data</h2>
+        </div>
+        <div class="card" data-target="card">
+              <h2>Data</h2>
         </div>
       </div>
     </section>
+
+    <!--<div class="wrapper">
+        <ul class="carousel" data-target="carousel">
+          <li class="card" data-target="card"></li>
+          <li class="card" data-target="card"></li>
+          <li class="card" data-target="card"></li>
+          <li class="card" data-target="card"></li>
+          <li class="card" data-target="card"></li>
+          <li class="card" data-target="card"></li>
+          <li class="card" data-target="card"></li>
+          <li class="card" data-target="card"></li>
+          <li class="card" data-target="card"></li>
+        </ul>
+        <div class="button-wrapper">
+          <button data-action="slideLeft">L</button>
+          <button data-action="slideRight">R</button>
+        </div>
+    </div>-->
 
   </div>
 </body>

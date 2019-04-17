@@ -40,7 +40,7 @@ p {
   position: fixed;
   text-align: center;
   top: 0;
-  width: 75%;
+  width: 100%;
   left: 0;
   z-index: 999;
 }
@@ -75,7 +75,7 @@ p {
 }
 .navigation .menu {
   border-top-right-radius: 10px;
-  width: 90%;
+  width: 50%;
   height: 80px;
 }
 .navigation .menu .menu {

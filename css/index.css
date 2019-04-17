@@ -263,6 +263,7 @@ p {
   border: 1px solid black;
   text-align: center;
   background: rgba(255, 255, 255, 0.85);
+  padding: 0.1%;
 }
 .content-2 .content-2-wrapper .card:nth-child(odd) {
   background: rgba(0, 0, 0, 0.85);
@@ -272,10 +273,17 @@ p {
   background: #000000;
 }
 .content-2 .content-2-wrapper .card:hover {
-  border: 20px solid #FFA500;
+  border: 18px solid #FFA500;
   opacity: 1;
   transition: 0.15s;
   background: #ffffff;
+}
+.content-2 .content-2-wrapper .card h2 {
+  text-decoration: underline;
+  font-size: 3rem;
+}
+.content-2 .content-2-wrapper .card p {
+  font-size: 1.8rem;
 }
 @media (max-width: 500px) {
   .content-2 .content-2-wrapper {
@@ -334,6 +342,8 @@ p {
 }
 .about .about-content-wrapper .about-us .team1-img {
   background-image: url("../img/chessdog.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
   height: 200px;
   width: 200px;
   margin: 0 auto;

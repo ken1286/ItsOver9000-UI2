@@ -41,7 +41,9 @@
       margin-top: 3%;
       padding: 0.2%;
 
-      .input-btn {
+      
+
+      .input-form {
         width: 45%;
         padding-left: 3px;
         font-size: 1.8rem;
@@ -51,11 +53,19 @@
         background-color: lightgray;
       }
 
+      .hidden {
+        visibility: hidden;
+      }
+
+      .transition-add {
+        transition: all 0.5s ease-in-out;
+      }
+
       .submit-btn {
         padding: 2%;
         width: 90px;
         font-size: 1.8rem;
-        border-radius: 5px;
+        border-radius: 15px;
       }
     }
 
@@ -91,27 +101,56 @@
 .content-2 {
   display: flex;
   justify-content: center;
-  align-content: center;
   width: 100%;
   background: white;
-  padding-top: 1%;
+  padding-top: 0.5%;
+  background-image: url("../img/chess-wallpaper6.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
   // background-color: #f5f2d0;
 
   .content-2-wrapper {
     width: 90%;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 
     .card {
-      width: 300px;
+      width: 24%;
       height: 300px;
+      min-width: 300px;
       border: 1px solid black;
       text-align: center;
-      background-color: white;
+      // background-color: white;
+      background: rgba(255, 255, 255, 0.85);
+      padding: 0.1%;
+      
 
       &:nth-child(odd) {
-        background: black;
+        // background: black;
+        background: rgba(0, 0, 0, 0.85);
         color: white;
+
+        &:hover {
+          background: rgba(0, 0, 0, 1);
+        }
+      }
+
+      &:hover {
+        border: 18px solid #FFA500;
+        opacity: 1;
+        transition: 0.15s;
+        background: rgba(255, 255, 255, 1);
+      }
+
+      h2 {
+        text-decoration: underline;
+        font-size: 3rem;
+      }
+      
+      p {
+        font-size: 1.8rem;
       }
     }
 
@@ -126,25 +165,14 @@
  
       .card {
         width: 100%;
+        background: rgba(255, 255, 255, 1);
+
+        &:nth-child(odd) {
+          // background: black;
+          background: rgba(0, 0, 0, 1);
+          color: white;
       }
     }
   }
 }
-
-
-
-
-
-
-
-   @media @phone {
-
-
-   .wrapper {
-       width: 100%;
-
-       .card {
-         width: 100%;
-       }
-     }
-   }
+}

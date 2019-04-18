@@ -196,24 +196,24 @@ p {
   margin-top: 3%;
   padding: 0.2%;
 }
-.top-content .top-content-wrapper form .input-form {
-  width: 45%;
-  padding-left: 3px;
-  font-size: 1.8rem;
-  height: 30px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  background-color: lightgray;
-  opacity: 0;
-}
 .top-content .top-content-wrapper form .transition-add {
   transition: all 0.5s ease-in-out;
 }
-.top-content .top-content-wrapper form .submit-btn {
+.top-content .top-content-wrapper form .register {
+  text-align: center;
+  text-decoration: none;
+  color: white;
   padding: 2%;
-  width: 90px;
+  width: 150px;
   font-size: 1.8rem;
+  border: 5px solid white;
+  background-color: black;
   border-radius: 15px;
+}
+.top-content .top-content-wrapper form .register:active {
+  background-color: white;
+  border: 5px solid black;
+  color: black;
 }
 .top-content .top-content-wrapper h1 {
   font-size: 5rem;
@@ -342,6 +342,7 @@ p {
   flex-direction: column;
   width: 100%;
   background-color: black;
+  padding-bottom: 1%;
 }
 .about .about-content-wrapper {
   width: 80%;
@@ -395,7 +396,7 @@ p {
   background-position: center;
   border-radius: 50%;
 }
-.about .about-content-wrapper .about-us .about-box .team6-img {
+.about .about-content-wrapper .about-us .about-box .team8-img {
   background-image: url("../img/white_pawn.png");
   background-repeat: no-repeat;
   width: 100%;
@@ -406,7 +407,7 @@ p {
   border-radius: 50%;
   transition: 0.2s;
 }
-.about .about-content-wrapper .about-us .about-box .team6-img:hover {
+.about .about-content-wrapper .about-us .about-box .team8-img:hover {
   background-image: url("../img/ken.jpeg");
 }
 .about .about-content-wrapper .about-us .about-box h4 {

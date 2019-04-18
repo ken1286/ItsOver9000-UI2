@@ -8,6 +8,9 @@ function toggleHidden() {
   inputForms.forEach( element => element.classList.remove("hidden") );
 }
 
-submitBtn.addEventListener("click", () => this.toggleHidden()
+submitBtn.addEventListener("click", () => {this.toggleHidden(); this.formFade()});
 
-);
+
+function formFade() {
+  TweenMax.to(inputForms, 2, {opacity: 1});
+}

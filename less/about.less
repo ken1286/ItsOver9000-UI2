@@ -31,7 +31,6 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      border: 1px solid red;
 
       .about-box {
         display: flex;
@@ -42,17 +41,55 @@
         max-width: 500px;
         min-width: 250px;
         height: 250px;
-        border: 1px solid white;
 
         .team1-img {
           background-image: url("../img/chessdog.jpg");
           background-repeat: no-repeat;
           width: 100%;
-          max-width: 250px;
-          height: 100px;
-          background-size: 50% 100%, contain;
+          max-width: 150px;
+          height: 150px;
+          background-size: cover;
           background-position: center;
           border-radius: 50%;
+        }
+
+        .team5-img {
+          background-image: url("../img/chessdog.jpg");
+          background-repeat: no-repeat;
+          width: 100%;
+          max-width: 150px;
+          height: 150px;
+          background-size: cover;
+          background-position: center;
+          border-radius: 50%;
+        }
+
+        .team6-img {
+          background-image: url("../img/white_pawn.png");
+          background-repeat: no-repeat;
+          width: 100%;
+          max-width: 150px;
+          height: 150px;
+          background-size: cover;
+          background-position: center;
+          border-radius: 50%;
+          transition: 0.2s;
+
+          &:hover {
+            background-image: url("../img/ken.jpeg");
+          }
+        }
+
+        h4 {
+          font-size: 2rem;
+          width: 100%;
+          margin: 0 auto;
+        }
+
+        h5 {
+          font-size: 1.9rem;
+          width: 100%;
+          margin: 0 auto;
         }
 
         p {

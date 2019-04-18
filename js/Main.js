@@ -1,16 +1,16 @@
 
 
-let inputForms = document.querySelectorAll(".input-form");
-let submitBtn = document.querySelector(".submit-btn");
+// let inputForms = document.querySelectorAll(".input-form");
+// let submitBtn = document.querySelector(".submit-btn");
 
-function toggleHidden() {
-  event.preventDefault();
-  inputForms.forEach( element => element.classList.remove("hidden") );
-}
+// function toggleHidden() {
+//   event.preventDefault();
+//   // inputForms.forEach( element => element.classList.remove("hidden") );
+// }
 
-submitBtn.addEventListener("click", () => {this.toggleHidden(); this.formFade()});
+// submitBtn.addEventListener("click", () => {this.toggleHidden()});
 
 
-function formFade() {
-  TweenMax.to(inputForms, 2, {opacity: 1});
-}
+// function formFade() {
+//   TweenMax.to(inputForms, 2, {opacity: 1});
+// }

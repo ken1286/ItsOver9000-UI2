@@ -321,6 +321,18 @@ p {
 .content-2 .content-2-wrapper .card .graph2:hover {
   opacity: 1;
 }
+.content-2 .content-2-wrapper .card .graph3 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/rank.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.8;
+}
+.content-2 .content-2-wrapper .card .graph3:hover {
+  opacity: 1;
+}
 @media (max-width: 500px) {
   .content-2 .content-2-wrapper {
     width: 100%;

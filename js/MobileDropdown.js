@@ -23,13 +23,15 @@ let dropdowns = document.querySelectorAll(".drop-menu");
 dropdowns.forEach( dropdown => new Dropdown(dropdown));
 
 let logo = document.querySelector(".logo");
+let logoLink = document.querySelector(".logolink");
 
-window.addEventListener('load', () => {logoGrow()});
+window.addEventListener('load', () => {logoGrow(); logoSpin()});
+// window.addEventListener('mouseenter', () => logoSpin());
 
 function logoGrow() {
   TweenMax.to(logo, 1, {width:"90px"});
 }
 
-// function logoSpin() {
-//   TweenMax.to(logo, 1, {rotateY:360});
-// }
+function logoSpin() {
+  TweenMax.to(logo, 2, {rotationY:-360, ease: Back.easeOut});
+}

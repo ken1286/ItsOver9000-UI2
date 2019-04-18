@@ -358,3 +358,14 @@ p {
   width: 100%;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .about .about-content-wrapper {
+    width: 100%;
+  }
+  .about .about-content-wrapper .about-us {
+    width: 100%;
+  }
+  .about .about-content-wrapper .about-us .about-box {
+    width: 100%;
+  }
+}

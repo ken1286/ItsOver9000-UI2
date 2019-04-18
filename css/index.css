@@ -389,7 +389,7 @@ p {
   height: 250px;
 }
 .about .about-content-wrapper .about-us .about-box .team1-img {
-  background-image: url("../img/chessdog.jpg");
+  background-image: url("../img/white_king.png");
   background-repeat: no-repeat;
   width: 100%;
   max-width: 150px;
@@ -398,8 +398,8 @@ p {
   background-position: center;
   border-radius: 50%;
 }
-.about .about-content-wrapper .about-us .about-box .team5-img {
-  background-image: url("../img/chessdog.jpg");
+.about .about-content-wrapper .about-us .about-box .team2-img {
+  background-image: url("../img/white_queen.png");
   background-repeat: no-repeat;
   width: 100%;
   max-width: 150px;
@@ -407,6 +407,40 @@ p {
   background-size: cover;
   background-position: center;
   border-radius: 50%;
+  transition: 0.2s;
+}
+.about .about-content-wrapper .about-us .about-box .team4-img {
+  background-image: url("../img/white_rook.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+.about .about-content-wrapper .about-us .about-box .team5-img {
+  background-image: url("../img/white_bishop.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+.about .about-content-wrapper .about-us .about-box .team6-img {
+  background-image: url("../img/white_knight.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  transition: 0.2s;
 }
 .about .about-content-wrapper .about-us .about-box .team8-img {
   background-image: url("../img/white_pawn.png");
@@ -418,9 +452,6 @@ p {
   background-position: center;
   border-radius: 50%;
   transition: 0.2s;
-}
-.about .about-content-wrapper .about-us .about-box .team8-img:hover {
-  background-image: url("../img/ken.jpeg");
 }
 .about .about-content-wrapper .about-us .about-box h4 {
   font-size: 2rem;

@@ -3,18 +3,21 @@
 Proposal
 
 - What problem does your app solve?
-	A chess rating only tells you your estimated overall playing strength. One does not know where they are weak or strong.
-	Computer engines do not explain why a position is stronger than another.
+	A chess rating only tells you your estimated overall playing strength. One does not know where they are weak.
+	Computer engines do not explain why a position is stronger than another 
 
 - Be as specific as possible; how does your app solve the problem?
-	It’s Over 9000! determines your estimated playing strength during any given position of a chess game.
-
+	It's Over 9000! determines your estimated playing strength during different phases of a chess game!
 - What is the mission statement?
+	No fluff, just improve
+	
 Features
 
 - What features are required for your minimum viable product?
+	Rank estimator, stats page, play-it out (best move?)
 - What features may you wish to put in a future release?
 - What do the top 3 similar apps do for their users?
+	They try to do everything! Too bad for them
 Frameworks - Libraries
 
 - What 3rd party frameworks/libraries are you considering using?
@@ -32,6 +35,7 @@ For Data Scientists
 
 Target Audience
 - Who is your target audience? Be specific.
+	Casual/lay players that want to improve or transition into more competitive chess
 - What feedback have you gotten from potential users?
 - Have you validated the problem and your solution with your target audience? How?
 
@@ -41,3 +45,4 @@ Research
 Prototype Key Feature(s)
 
 - This is the “bread and butter” of the app, this is what makes your app yours. Calculate how long it takes to implement these features and triple the time estimated. That way you’ll have plenty of time to finish. It is preferred to drop features and spend more time working on your MVP features if needed.
+

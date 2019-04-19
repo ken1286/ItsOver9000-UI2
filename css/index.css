@@ -397,6 +397,10 @@ p {
   background-size: cover;
   background-position: center;
   border-radius: 50%;
+  transition: 0.25s;
+}
+.about .about-content-wrapper .about-us .about-box .team1-img:hover {
+  background-image: url("../img/rudy.png");
 }
 .about .about-content-wrapper .about-us .about-box .team2-img {
   background-image: url("../img/white_queen.png");
@@ -407,7 +411,24 @@ p {
   background-size: cover;
   background-position: center;
   border-radius: 50%;
-  transition: 0.2s;
+  transition: 0.25s;
+}
+.about .about-content-wrapper .about-us .about-box .team2-img:hover {
+  background-image: url("../img/josh.jpg");
+}
+.about .about-content-wrapper .about-us .about-box .team3-img {
+  background-image: url("../img/white_rook.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  transition: 0.25s;
+}
+.about .about-content-wrapper .about-us .about-box .team3-img:hover {
+  background-image: url("../img/joshua.png");
 }
 .about .about-content-wrapper .about-us .about-box .team4-img {
   background-image: url("../img/white_rook.png");
@@ -418,7 +439,10 @@ p {
   background-size: cover;
   background-position: center;
   border-radius: 50%;
-  transition: 0.2s;
+  transition: 0.25s;
+}
+.about .about-content-wrapper .about-us .about-box .team4-img:hover {
+  background-image: url("../img/alejandro-ruperti.png");
 }
 .about .about-content-wrapper .about-us .about-box .team5-img {
   background-image: url("../img/white_bishop.png");
@@ -429,7 +453,10 @@ p {
   background-size: cover;
   background-position: center;
   border-radius: 50%;
-  transition: 0.2s;
+  transition: 0.25s;
+}
+.about .about-content-wrapper .about-us .about-box .team5-img:hover {
+  background-image: url("../img/crawford.jpg");
 }
 .about .about-content-wrapper .about-us .about-box .team6-img {
   background-image: url("../img/white_knight.png");
@@ -440,7 +467,24 @@ p {
   background-size: cover;
   background-position: center;
   border-radius: 50%;
-  transition: 0.2s;
+  transition: 0.25s;
+}
+.about .about-content-wrapper .about-us .about-box .team6-img:hover {
+  background-image: url("../img/winston-lee.jpg");
+}
+.about .about-content-wrapper .about-us .about-box .team7-img {
+  background-image: url("../img/white_pawn.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  transition: 0.25s;
+}
+.about .about-content-wrapper .about-us .about-box .team7-img:hover {
+  background-image: url("../img/krisli-dimo.jpg");
 }
 .about .about-content-wrapper .about-us .about-box .team8-img {
   background-image: url("../img/white_pawn.png");
@@ -451,7 +495,10 @@ p {
   background-size: cover;
   background-position: center;
   border-radius: 50%;
-  transition: 0.2s;
+  transition: 0.25s;
+}
+.about .about-content-wrapper .about-us .about-box .team8-img:hover {
+  background-image: url("../img/ken.jpeg");
 }
 .about .about-content-wrapper .about-us .about-box h4 {
   font-size: 2rem;
